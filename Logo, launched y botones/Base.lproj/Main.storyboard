@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,123 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Logo__launched_y_botones" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22C-yr-aQX">
+                                <rect key="frame" x="325" y="612" width="34" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="MLX-FG-RGW"/>
+                                    <constraint firstAttribute="width" constant="34" id="geK-LW-h4X"/>
+                                </constraints>
+                                <state key="normal" image="iTunesArt"/>
+                                <connections>
+                                    <segue destination="hSx-B2-pho" kind="show" id="4rh-xL-Vb6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="KWT-4l-FNe">
+                                <rect key="frame" x="60.5" y="70" width="254" height="211"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="211" id="0Af-gV-a6H"/>
+                                    <constraint firstAttribute="width" constant="254" id="w7w-Jn-Zyi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todo sobre ellos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hp-ZT-krX">
+                                <rect key="frame" x="60" y="554" width="255" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="d8p-b0-vyD"/>
+                                    <constraint firstAttribute="height" constant="43" id="hGw-JJ-hAA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73725490196078436" green="0.11372549019607843" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0hp-ZT-krX" secondAttribute="trailing" constant="60" id="35q-6y-GPs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="22C-yr-aQX" secondAttribute="trailing" constant="16" id="4fb-2x-yvY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KWT-4l-FNe" secondAttribute="trailing" constant="60.5" id="9ns-dB-L6E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="22C-yr-aQX" secondAttribute="trailing" constant="16" id="FJe-El-Us0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0hp-ZT-krX" secondAttribute="bottom" constant="70" id="H4L-p4-mZk"/>
+                            <constraint firstItem="0hp-ZT-krX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="JV3-o3-EXQ"/>
+                            <constraint firstItem="KWT-4l-FNe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="OeU-6t-QkQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0hp-ZT-krX" secondAttribute="trailing" constant="60" id="bdy-3q-3cP"/>
+                            <constraint firstItem="KWT-4l-FNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pR6-zy-GpT"/>
+                            <constraint firstItem="KWT-4l-FNe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60.5" id="sDO-1C-xTX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="22C-yr-aQX" secondAttribute="bottom" constant="20" id="seu-Lw-2VG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TER-ED-bkl">
+            <objects>
+                <viewController id="hSx-B2-pho" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k6h-7F-uAh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6P-dF-DSC">
+                                <rect key="frame" x="314" y="602" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="pay-Z6-EKI"/>
+                                    <constraint firstAttribute="height" constant="45" id="u2u-Py-6V9"/>
+                                </constraints>
+                                <state key="normal" image="kisspng-button-download-icon-previous-button-png-image-5a757f86107b41.7153602815176497980675"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="6w8-Vc-E0r"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HLe-f4-lK3">
+                                <rect key="frame" x="67" y="523" width="240" height="124"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="InS-gZ-at7"/>
+                                    <constraint firstAttribute="height" priority="977" constant="124" id="OQb-ja-RnW"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Faerie_Dragon" translatesAutoresizingMaskIntoConstraints="NO" id="zCo-cq-cRs">
+                                <rect key="frame" x="109" y="25" width="157" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="2Wb-82-YWi"/>
+                                    <constraint firstAttribute="height" constant="222" id="Jwo-YP-B3A"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3790813435606763" green="0.14614888452933769" blue="0.40175878479630189" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zCo-cq-cRs" firstAttribute="leading" secondItem="CtW-Dn-rtX" secondAttribute="leading" constant="109" id="1LD-oF-edf"/>
+                            <constraint firstItem="CtW-Dn-rtX" firstAttribute="bottom" secondItem="HLe-f4-lK3" secondAttribute="bottom" constant="20" id="3di-4y-8E8"/>
+                            <constraint firstItem="CtW-Dn-rtX" firstAttribute="trailing" secondItem="zCo-cq-cRs" secondAttribute="trailing" constant="109" id="4dJ-7M-owM"/>
+                            <constraint firstItem="CtW-Dn-rtX" firstAttribute="trailing" secondItem="HLe-f4-lK3" secondAttribute="trailing" constant="68" id="7Tn-F5-Qkq"/>
+                            <constraint firstItem="CtW-Dn-rtX" firstAttribute="trailing" secondItem="y6P-dF-DSC" secondAttribute="trailing" constant="16" id="ECu-zt-1SF"/>
+                            <constraint firstItem="zCo-cq-cRs" firstAttribute="top" secondItem="CtW-Dn-rtX" secondAttribute="top" constant="5" id="LT0-UK-llA"/>
+                            <constraint firstItem="zCo-cq-cRs" firstAttribute="centerX" secondItem="k6h-7F-uAh" secondAttribute="centerX" id="UHZ-1S-77g"/>
+                            <constraint firstItem="CtW-Dn-rtX" firstAttribute="bottom" secondItem="y6P-dF-DSC" secondAttribute="bottom" constant="20" id="aZs-kb-zUZ"/>
+                            <constraint firstItem="HLe-f4-lK3" firstAttribute="leading" secondItem="CtW-Dn-rtX" secondAttribute="leading" constant="67" id="apH-fS-5hR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CtW-Dn-rtX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6XK-PM-NiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848.79999999999995" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Faerie_Dragon" width="160" height="222"/>
+        <image name="iTunesArt" width="171" height="171"/>
+        <image name="kisspng-button-download-icon-previous-button-png-image-5a757f86107b41.7153602815176497980675" width="171" height="171"/>
+        <image name="logo" width="201" height="207"/>
+    </resources>
 </document>
